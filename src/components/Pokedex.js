@@ -3,6 +3,7 @@ import { UserContext } from '../context/userContext'
 import InputIcon from '@material-ui/icons/Input';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import '../css/pokedex.css'
+import '../css/filter.css'
 
 const Pokedex = () => {
 
@@ -23,6 +24,9 @@ const Pokedex = () => {
             <button onClick={handleLogOut}><InputIcon /></button>
             </div>
            </nav>
+           <div className="pokedex-filter">
+
+           </div>
        </div> 
     )
 }

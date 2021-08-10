@@ -1,0 +1,13 @@
+.pokedex-filter{
+  width: 65%;
+  height: 75vh;
+  border-radius: 2rem;
+  background-color: yellow;  
+}
+
+@media (max-width: 1000px){
+    .pokedex-filter {
+        width: 90%;
+        height: 75vh;
+    } 
+}
