@@ -1,0 +1,69 @@
+.pokedex-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/pokedex.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.pokedex-navtab {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pokedex-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    width: 15%;
+    border-radius: 2rem;
+    background-color: yellow;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.pokedex-logo svg{
+    width: 4rem;
+    height: 8rem;
+    color: #004AAD;
+}
+
+.pokedex-navtab h1{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-weight: 700;
+    height: 15vh;
+    background-color: yellow;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.button-logOut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    width: 15%;
+    background-color: yellow;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.button-logOut button{
+    width: 8.5rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border: 0;
+    font-size: 1.3rem;
+    background-color: #004AAD;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
