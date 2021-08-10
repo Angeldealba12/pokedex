@@ -104,8 +104,9 @@
 
 .button-logOut{
     width: 30%;
-    height: 3vh;
+    height: 7vh;
     order: -2;
+    border-radius: 1rem;
 }
 
 
@@ -114,5 +115,10 @@
     height: 3rem;
 }
 
+.button-logOut button{
+    width: 3.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+}
 
 }

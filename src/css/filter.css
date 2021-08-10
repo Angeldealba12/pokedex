@@ -1,9 +1,75 @@
 .pokedex-filter{
+  display: flex;
+  flex-wrap: wrap;  
   width: 65%;
   height: 75vh;
   border-radius: 2rem;
   background-color: yellow;  
 }
+
+.pokedex-filter-select{
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list{
+    width: 90%;
+}
+
+.input-button{
+    width: 100%;
+    display: flex;
+    
+}
+
+.input-button input{
+    width: 80%;
+    height: 3rem;
+    border: 0;
+    padding-left: 0.5rem;
+    font-size: 1.3rem;
+    border-bottom: 3px solid  #004AAD;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.input-button button{
+    width: 20%;
+    border: 0;
+    color: #fff;
+    background-color: #004AAD;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.typesBox {
+    overflow: auto;
+    height: 8rem;
+    background-color: white;
+    font-size: 1.3rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.typesBox .pokeType {
+    padding: 0.5rem;
+}
+
+.pokedex-filter-search{
+    border: solid 1px black;
+    width: 50%;
+    height: 30vh;
+}
+
+.pokedex-filter-results{
+    border: solid 1px black;
+    width: 100%;
+    height: 45vh;
+}
+
 
 @media (max-width: 1000px){
     .pokedex-filter {
