@@ -6,10 +6,10 @@ import './css/index.css'
 function App() {
   return (
     <Router>
-        <Switch>
-          <Route path="/" exact component={LogIn} />
-          <Route path="./pokedex" component={Pokedex}/>
-        </Switch>
+      <Switch>
+        <Route path="/" exact component={LogIn} />
+        <Route path="./pokedex" component={Pokedex} />
+      </Switch>
     </Router>
   );
 }

@@ -65,29 +65,44 @@
 }
 
 .login-form input{
-    width: 11rem;
-    height: 2rem;
+    width: 60%;
+    height: 2.5rem;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
     rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border: 0;
     font-size: 1.3rem;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+}
+
+.input-container{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-container .grad-1 {
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   cursor: default;
 }
 
 .btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
 .btn-grad {
-   padding: 10px 45px;
-   margin-top: 1.5rem;
+   width: 20%;
+   height: 2.5rem;
    text-align: center;
    transition: 0.5s;
    background-size: 200% auto;
    color: white;            
-   border-radius: 10px;
    display: block;
    border: 0;
    font-size: 1rem;
    cursor: pointer;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
  }
 
 
@@ -111,9 +126,18 @@
     height: 30vh;  
   }
   .login-child{
-      width: 80%;
+      width: 90%;
       height: 45vh;
       margin: 0;
   }  
+
+  .login-form{
+      width: 90%;
+  }
+
+  .input-container{
+    width: 85%;
+}
+
 }
 
