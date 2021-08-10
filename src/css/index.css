@@ -10,50 +10,47 @@
 .login-container{
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    background-image: url(https://greatloveart.com/wp-content/uploads/2021/05/Pokemon-wallpaper-for-laptop.jpg);
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: 60%;
-}
-
-.logo{
-    width: 50%;
-    height: 35vh;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png);
-    background-size: 80%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.login-child{
-    margin-left: 6rem;
-    width: 40%;
-    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
+    flex-direction: column;
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(http://images6.fanpop.com/image/photos/40000000/Pokemon-Background-Designs40-random-40057516-1920-1080.jpg);
+    background-image: url("../img/backgroud.png");
+}
+
+.logo{
+    width: 70%;
+    height: 40vh;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.login-child{
+    width: 40%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .login-form {
-    background-color: white;
-    width: 70%;
+    width: 100%;
     height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, .15);
-    
-    backdrop-filter: blur(5px);
 }
 
 .login-form h1{
@@ -66,10 +63,9 @@
 
 .login-form input{
     width: 60%;
-    height: 2.5rem;
+    height: 3.5rem;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
     border: 0;
     font-size: 1.3rem;
     padding-left: 0.5rem;
@@ -86,12 +82,13 @@
    justify-content: center;
    align-items: center; 
    cursor: default;
+   background-color: #FF1616;
 }
 
-.btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+
 .btn-grad {
    width: 20%;
-   height: 2.5rem;
+   height: 3.5rem;
    text-align: center;
    transition: 0.5s;
    background-size: 200% auto;
@@ -100,9 +97,9 @@
    border: 0;
    font-size: 1rem;
    cursor: pointer;
+   background-color: #004AAD;
    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
  }
 
 
@@ -118,12 +115,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        background-image: url("../img/phone-backgroud.png");
     }
 
   .logo{
     width: 100%;
-    height: 30vh;  
+    height: 30vh;
+    background-size: 80%;  
   }
   .login-child{
       width: 90%;

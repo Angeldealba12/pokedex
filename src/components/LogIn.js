@@ -18,7 +18,8 @@ const LogIn = () => {
 
     return (
         <div className="login-container">
-            <div className="logo"></div>
+            <div className="logo">
+            </div>
             <div className="login-child">
                 <form onSubmit={handleSubmit} className="login-form">
                     <h1>Login</h1>
