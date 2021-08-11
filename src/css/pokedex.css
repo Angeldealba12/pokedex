@@ -75,17 +75,22 @@
 
 @media (max-width: 1000px){
 
+.pokedex-container{
+    background-image: url("../img/phone-background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 250vh;
+    justify-content: flex-start;
+    align-items: center;
+}
    
 .pokedex-navtab {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("../img/phone-background.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+    width: 85%;
 } 
 
 .pokedex-logo {
