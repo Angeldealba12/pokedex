@@ -1,9 +1,10 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
-import axios from 'axios'
-import PokeCard from './PokeCard'
+import axios from 'axios';
+import { useEffect, useState } from 'react'
+import  PokeCard  from './PokeCard';
 
-const PokeTypes = ( { url }  ) => {
+
+const PokeContainer = ({search}) => {
 
     const [name, setName] = useState('')
     const [img, setImg] = useState('')
@@ -15,20 +16,18 @@ const PokeTypes = ( { url }  ) => {
 
     useEffect(() => {
 
-        let baseURL = url;
-        
-        axios.get(baseURL).then((response) => {
+        if(search){
+
+            const baseURL = `https://pokeapi.co/api/v2/pokemon/${search.toLowerCase()}` 
+
+
+            axios.get(baseURL).then((response) => {
 
             const { data } = response
             const { other } = data.sprites
 
             setName(data.name)
-
-            if (other.dream_world.front_default === null) {
-                setImg(data.sprites.back_default)
-            } else {
-                setImg(other.dream_world.front_default)
-            }
+            setImg(other.dream_world.front_default)
 
             const arr = data.types
 
@@ -43,16 +42,13 @@ const PokeTypes = ( { url }  ) => {
             setDefense(arr2[2].base_stat)
             setSpeed(arr2[3].base_stat)
         });
+        }
 
-    }, [url]);
-
-
-    
-
+        }, [search]);    
 
     return (
         <>
-           <PokeCard
+            <PokeCard
                 name={name}
                 img={img}
                 types={types}
@@ -62,7 +58,8 @@ const PokeTypes = ( { url }  ) => {
                 speed={speed}
             />
         </>
+             
     )
 }
 
-export default PokeTypes
+export default PokeContainer

@@ -1,4 +1,3 @@
-import { CompassCalibrationOutlined } from '@material-ui/icons';
 import { useState, useEffect } from 'react'
 import { getPokemonBytype } from './GetTypes'
 import PokeTypes from './PokeTypes';

@@ -5,33 +5,33 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import '../css/pokedex.css'
 import '../css/filter.css'
 import SelectBox from './SelectBox';
-import PokeTypes from './PokeTypes';
+
 
 const Pokedex = () => {
 
-    const {user, setUser} =  useContext(UserContext)
+    const { user, setUser } = useContext(UserContext)
 
     const handleLogOut = () => {
-       setUser(null);
+        setUser(null);
     }
 
     return (
-       <div className="pokedex-container">
-           <nav className="pokedex-navtab">
-            <div className="pokedex-logo">
-                <AccountCircleIcon />
+        <div className="pokedex-container">
+            <nav className="pokedex-navtab">
+                <div className="pokedex-logo">
+                    <AccountCircleIcon />
+                </div>
+                <h1>Welcome Trainer,  {user}</h1> 
+                <div className="button-logOut">
+                    <button onClick={handleLogOut}><InputIcon /></button>
+                </div>
+            </nav>
+            <div className="pokedex-filter">
+                <div className="pokedex-filter-select">
+                    <SelectBox />
+                </div>
             </div>
-            <h1>Welcome Trainer,  {user}</h1>
-            <div className="button-logOut">
-            <button onClick={handleLogOut}><InputIcon /></button>
-            </div>
-           </nav>
-           <div className="pokedex-filter">
-            <div className="pokedex-filter-select">
-            <SelectBox />
-            </div>
-           </div>
-       </div> 
+        </div>
     )
 }
 

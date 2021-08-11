@@ -18,7 +18,7 @@ const PokeCard = ({name, img, types, hp, attack, defense, speed }) => {
             <h3>Attack: {attack}</h3>
             <h3>Defense: {defense}</h3>
             <h3>Speed: {speed}</h3>
-            <Link><h2>{nameCap}</h2></Link>
+            <Link to="/pokemon" ><h2>{nameCap}</h2></Link>
             </div>
         </div>
     )
