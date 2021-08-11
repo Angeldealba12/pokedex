@@ -5,6 +5,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import '../css/pokedex.css'
 import '../css/filter.css'
 import SelectBox from './SelectBox';
+import PokeTypes from './PokeTypes';
 
 const Pokedex = () => {
 
@@ -28,12 +29,6 @@ const Pokedex = () => {
            <div className="pokedex-filter">
             <div className="pokedex-filter-select">
             <SelectBox />
-            </div>
-            <div className="pokedex-filter-search">
-
-            </div>
-            <div className="pokedex-filter-results">
-            
             </div>
            </div>
        </div> 

@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import PokeCard from './PokeCard'
 
-const PokeTypes = () => {
+const PokeTypes = ( { url }  ) => {
 
     const [name, setName] = useState('')
     const [img, setImg] = useState('')
@@ -12,13 +13,10 @@ const PokeTypes = () => {
     const [defense, setDefense] = useState('')
     const [speed, setSpeed] = useState('')
 
-    const TypeCap = types.charAt(0).toUpperCase() + types.slice(1);
-    const nameCap = name.charAt(0).toUpperCase() + name.slice(1);
-
     useEffect(() => {
 
-        let baseURL = '';
-
+        let baseURL = url;
+        console.log(url)
         axios.get(baseURL).then((response) => {
 
             const { data } = response
@@ -46,16 +44,24 @@ const PokeTypes = () => {
             setSpeed(arr2[3].base_stat)
         });
 
-    }, []);
+    }, [url]);
 
 
-
+    
 
 
     return (
-        <div>
-
-        </div>
+        <>
+           <PokeCard
+                name={name}
+                img={img}
+                types={types}
+                hp={hp}
+                attack={attack}
+                defense={defense}
+                speed={speed}
+            />
+        </>
     )
 }
 
