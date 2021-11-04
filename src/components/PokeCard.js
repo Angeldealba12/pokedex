@@ -1,8 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+ import { Link, Switch } from 'react-router-dom'
 import '../css/pokeCard.css'
 
 const PokeCard = ({name, img, types, hp, attack, defense, speed }) => {
+
+
 
     const TypeCap = types.charAt(0).toUpperCase() + types.slice(1);
     const nameCap = name.charAt(0).toUpperCase() + name.slice(1);
@@ -18,7 +20,10 @@ const PokeCard = ({name, img, types, hp, attack, defense, speed }) => {
             <h3>Attack: {attack}</h3>
             <h3>Defense: {defense}</h3>
             <h3>Speed: {speed}</h3>
-            <Link to="/pokemon" ><h2>{nameCap}</h2></Link>
+            <Link to={`/pokedex/${name}`} ><h2>{nameCap}</h2></Link>
+            <Switch>
+
+            </Switch>
             </div>
         </div>
     )

@@ -5,9 +5,13 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import '../css/pokedex.css'
 import '../css/filter.css'
 import SelectBox from './SelectBox';
+import { useRouteMatch } from 'react-router-dom';
 
 
 const Pokedex = () => {
+    
+    const match = useRouteMatch();
+    console.log(match);
 
     const { user, setUser } = useContext(UserContext)
 

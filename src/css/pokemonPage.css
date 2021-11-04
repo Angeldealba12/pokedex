@@ -1,0 +1,69 @@
+.container-pokepage{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/pokedex.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokepage-child{
+  width: 80%;
+  height: 80vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-image: url(../img/Diseño\ sin\ título.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.infoContainer {
+  width: 50%;
+  height: 80%;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+}
+
+.infoContainer h1{
+  font-size: 4rem;
+}
+
+.imgContainer{
+  width: 40%;
+  height: 80%;
+}
+
+.imgContainer img{
+  width: 100%
+}
+
+@media (max-width: 1000px){
+  .container-pokepage{
+    background-image: url(../img/phone-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .pokepage-child{
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .infoContainer{
+    width: 90%;
+    height: 50%;
+  }
+
+  .imgContainer{
+    height: 50%;
+    width: 100%;
+  }
+}
