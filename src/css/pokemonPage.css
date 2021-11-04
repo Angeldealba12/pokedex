@@ -25,14 +25,50 @@
 
 .infoContainer {
   width: 50%;
-  height: 80%;
-  border: 1px solid #000;
+  height: 90%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 }
 
 .infoContainer h1{
   font-size: 4rem;
+  width: 100%;
+  text-align: center;
+}
+
+.info-pokedex{
+  margin: 1rem;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-pokedex p{
+  color: white;
+  width: 80%;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  background-color: #3169B1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.infoContainer a{
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  width: 40%;
+  padding: 0.4rem;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
 }
 
 .imgContainer{
@@ -45,25 +81,34 @@
 }
 
 @media (max-width: 1000px){
+
   .container-pokepage{
     background-image: url(../img/phone-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
   }
 
   .pokepage-child{
     width: 90%;
     flex-wrap: wrap;
+    height: 95%;
   }
 
   .infoContainer{
     width: 90%;
-    height: 50%;
+    height: 65%;
   }
 
   .imgContainer{
-    height: 50%;
+    height: 35%;
     width: 100%;
+  }
+
+  .info-pokedex{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
   }
 }
